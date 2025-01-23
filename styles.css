@@ -1,7 +1,7 @@
-/* Importation de la police */
+/* importation de la police */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Réinitialisation des styles de base */
+/* réinitialisation des styles de base */
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +10,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Styles pour le body */
+/* tyles pour le body */
 body {
     background: #c4c4c4;
     font-size: 14px;
@@ -20,7 +20,7 @@ body {
     min-height: 100vh;
 }
 
-/* Styles pour le wrapper du CV */
+/* styles pour le wrapper du CV */
 .resume_wrapper {
     display: flex;
     width: 800px;
@@ -30,13 +30,13 @@ body {
     flex: 1;
 }
 
-/* Styles pour la partie gauche du CV */
+/* styles pour la partie gauche du CV */
 .resume_wrapper .resume_left {
     width: 35%;
     background: #26252d;
 }
 
-/* Styles pour l'image du CV */
+/* styles pour l'image du CV */
 .resume_wrapper .resume_left .resume_image {
     width: 100%;
 }
@@ -46,7 +46,7 @@ body {
     display: block;
 }
 
-/* Styles pour le titre du CV */
+/* styles pour le titre du CV */
 .resume_wrapper .resume_title {
     color: #fff;
     text-transform: uppercase;
@@ -56,17 +56,17 @@ body {
     letter-spacing: 4px;
 }
 
-/* Styles pour les informations du CV */
+/* styles pour les informations du CV */
 .resume_wrapper .resume_left .resume_info {
     color: #cccccd;
 }
 
-/* Styles pour la partie basse du CV */
+/* styles pour la partie basse du CV */
 .resume_wrapper .resume_left .resume_bottom {
     padding: 20px 30px;
 }
 
-/* Styles pour les éléments du CV */
+/* styles pour les éléments du CV */
 .resume_wrapper .resume_item {
     padding: 20px 0;
     border-bottom: 1px solid #0175b2;
@@ -76,7 +76,7 @@ body {
     border-bottom: 0;
 }
 
-/* Styles pour le nom et le rôle */
+/* styles pour le nom et le rôle */
 .resume_wrapper .resume_left .resume_namerole {
     display: none;
 }
@@ -94,7 +94,7 @@ body {
     color: #84838b;
 }
 
-/* Styles pour les contacts */
+/* styles pour les contacts */
 .resume_wrapper .resume_left .resume_contact .resume_info:last-child {
     margin-top: 10px;
 }
@@ -104,7 +104,7 @@ body {
     margin-bottom: 2px;
 }
 
-/* Styles pour les compétences */
+/* styles pour les compétences */
 .resume_wrapper .resume_left .resume_skills .skills_list {
     display: flex;
     justify-content: space-between;
@@ -122,12 +122,11 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    /* background: #0175b2; */
     width: 100%;
     height: 100%;
 }
 
-/* Styles pour la partie droite du CV */
+/* styles pour la partie droite du CV */
 .resume_wrapper .resume_right {
     width: 65%;
     padding: 20px 40px;
@@ -202,37 +201,35 @@ body {
     margin-bottom: 10px;
 }
 
-/* Styles pour le footer */
+/* styles pour le footer */
 .footer {
-    background-color: #26252d; /* Couleur de fond du footer */
-    padding: 15px 20px; /* Taille réduite du padding */
-    text-align: center; /* Centre les liens */
+    background-color: #26252d; /* couleur de fond du footer */
+    padding: 15px 20px; /* taille réduite du padding */
+    text-align: center; /* centre les liens */
     width: 100%;
     box-sizing: border-box;
-    margin-top: 200px; /* Augmenter la marge pour décaler plus bas */
+    margin-top: 0px; /* augmenter la marge pour décaler plus bas */
 }
 
 .footer_links {
     display: flex;
-    justify-content: center; /* Centre les liens horizontalement */
-    gap: 20px; /* Espace entre les liens */
+    justify-content: center; /* centre les liens horizontalement */
+    gap: 20px; /* espace entre les liens */
 }
 
 .footer_link {
-    color: #fff; /* Couleur du texte des liens */
-    text-decoration: none; /* Enlève le soulignement des liens */
-    font-size: 16px; /* Taille du texte des liens */
-    transition: color 0.3s; /* Transition pour le changement de couleur */
+    color: #fff; /* couleur du texte des liens */
+    text-decoration: none; /* enlève le soulignement des liens */
+    font-size: 16px; /* taille du texte des liens */
+    transition: color 0.3s; /* transition pour le changement de couleur */
 }
 
 .footer_link:hover {
-    color: #0175b2; /* Couleur du texte des liens au survol */
+    color: #0175b2; /* couleur du texte des liens au survol */
 }
 
 
-
-
-/* Styles pour les médias */
+/* styles pour les médias */
 @media screen and (max-width: 800px) {
     .resume_wrapper .resume_right .resume_namerole {
         display: none;
@@ -278,14 +275,13 @@ body {
 }
 
 @media print {
-    /* Assurez-vous que les couleurs sont maintenues */
+    /* les couleurs sont maintenues */
     * {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
 
-    /* Vous pouvez également ajouter d'autres styles spécifiques à l'impression ici */
-    /* Par exemple, cacher certains éléments ou ajuster les marges */
+    /*ajouter d'autres styles spécifiques à l'impression ici par exemple, cacher certains éléments ou ajuster les marges */
     .no-print {
         display: none;
     }
@@ -295,11 +291,43 @@ body {
         padding: 0;
     }
 
-    /* Exemple pour ajuster les marges de la page */
     @page {
         margin: 1cm;
     }
+
+    .resume_wrapper {
+        width: 100%;
+        max-width: 100%;  
+        box-sizing: border-box;  
+        padding: 0;  
+    }
+
+    body {
+        font-size: 12px;  
+    }
+
+  
+    .resume_wrapper .resume_left,
+    .resume_wrapper .resume_right {
+        padding: 10px;
+    }
+
+    .resume_wrapper .resume_item {
+        padding: 10px 0;
+    }
+
+    /* réduire les espacements entre les éléments */
+    .resume_wrapper .resume_left .resume_image img {
+        width: 80%;  /* Réduisez la taille de l'image */
+    }
+
+    /* contenu des sections pour mieux tenir sur une page */
+    .resume_wrapper .resume_right .resume_data .year,
+    .resume_wrapper .resume_right .resume_data .content {
+        font-size: 12px;  /* taille du texte */
+    }
 }
+
 
 
 
